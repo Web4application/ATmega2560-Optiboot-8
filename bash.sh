@@ -22,4 +22,8 @@ avrdude -c usbasp -P usb -p t85 -e -u \
   -U lfuse:w:0xFF:m \
   -U hfuse:w:0xDF:m \
   -U efuse:w:0xFF:m
+grep :10 optiboot_atmega328.hex | wc -l | awk '{print $1 * 16}'
+make clean && make atmega328
+avr-size -C --mcu=atmega328p optiboot_atmega328.elf
+make atmega328 OPTIMIZE=-Os
 
