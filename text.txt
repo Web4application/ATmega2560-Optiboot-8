@@ -1,0 +1,19 @@
+##############################################################
+
+mega2560o.name=[Optiboot] Arduino Mega 2560
+mega2560o.upload.protocol=arduino
+mega2560o.upload.maximum_size=253952
+mega2560o.upload.speed=115200
+mega2560o.bootloader.low_fuses=0xff
+mega2560o.bootloader.high_fuses=0xde
+mega2560o.bootloader.extended_fuses=0xfd
+mega2560o.bootloader.path=optiboot
+mega2560o.bootloader.file=optiboot_atmega2560.hex
+mega2560o.bootloader.unlock_bits=0x3F
+mega2560o.bootloader.lock_bits=0x0F
+mega2560o.build.mcu=atmega2560
+mega2560o.build.f_cpu=16000000L
+mega2560o.build.core=arduino:arduino
+mega2560o.build.variant=arduino:mega
+
+##############################################################
